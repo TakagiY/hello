@@ -1,4 +1,3 @@
-(defpackage :my-first-ros
+(defpackage :hello
   (:use :cl)
-  (:export :hello))
-(in-package :my-first-ros)
+  (:export hello))
