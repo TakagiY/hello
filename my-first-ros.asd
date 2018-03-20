@@ -1,4 +1,4 @@
-(defsystem hello
+(defsystem my-first-ros
   :version "0.1.1"
   :author "TakagiY"
   :license "GPLv3"

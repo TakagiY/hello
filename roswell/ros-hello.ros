@@ -5,8 +5,8 @@ exec ros -Q -- $0 "$@"
 |#
 (progn ;;init forms
   (ros:ensure-asdf)
-  (unless (find-package :hello)
-    (ql:quickload :hello :silent t)))
+  (unless (find-package :my-first-ros)
+    (ql:quickload :my-first-ros :silent t)))
 
 (defpackage :ros.script.ros-hello.3730571621
   (:use :cl))
@@ -14,6 +14,6 @@ exec ros -Q -- $0 "$@"
 
 (defun main (&rest argv)
   (declare (ignorable argv))
-  (hello:hello argv))
+  (my-first-ros:hello argv))
 
 ;;; vim: set ft=lisp lisp:
